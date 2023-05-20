@@ -1,0 +1,29 @@
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  top: 20%;
+}
+
+.quote-text {
+  font-size: 50px;
+  margin-top: 10px;
+  text-align: center;
+  color:  #a799b7;
+  text-shadow: 1.5px 1px black;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Luminari;
+}
+
+.author-text {
+  font-size: 35px;
+  margin-top: 50px;
+  text-align: center;
+  color:  #a799b7;
+  text-shadow: 2px 2px black;
+  font-weight: bold;
+}

@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2 align="center">How you doing?</h2>
+<ul class="moods">
+  <li *ngFor="let mood of moods">
+    <a routerLink="/mood/{{mood.id}}">
+    <button [class.selected]="mood === selectedMood" type="button" (click)="onSelect(mood)">
+      <span class="badge">{{mood.id}}</span>
+      <span class="name">{{mood.name}}</span>
+    </button>
+  </a>
+  </li>
+</ul>
+
+<div *ngIf="selectedMood">
+  <h2 align="center">{{selectedMood.name | uppercase}} </h2>
+
+  <div align="center">
+    <label for="mood-name">Your mood is: </label>
+    <input id="mood-name" [(ngModel)]="selectedMood.name">
+
+
+  </div>
+  <div align="center">
+    <a>Wanna boost your mood?</a>
+    <button (click)="addToCart()">Of course!</button>
+  </div>
+
+
+
+</div>
+</body>
+</html>

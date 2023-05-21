@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const MOODS = [{\n  id: 1,\n  name: 'Happy'\n}, {\n  id: 2,\n  name: 'Sad'\n}, {\n  id: 3,\n  name: 'Bored'\n}, {\n  id: 4,\n  name: 'Tired'\n}, {\n  id: 5,\n  name: 'Excited'\n}, {\n  id: 6,\n  name: 'Stressed'\n}];","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
